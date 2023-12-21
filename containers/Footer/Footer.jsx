@@ -7,12 +7,12 @@ import './Footer.css';
 const Footer = () => {
     return (
     <>
-    <h2 className="head-text">Take a <span>coffee & chat</span> with me</h2>
+    <h2 className="head-text dark:text-white">Take a <span className='dark:text-yellow-bg'>coffee & chat</span> with me</h2>
 
     <div className="app__footer-cards">
-      <div className="app__footer-card">
+      <div className="app__footer-card bg-secondary-color dark:bg-light-dark-bg">
         <img src={'/email.png'} alt="email" />
-        <a href="mailto:ahtasham1802@gmail.com" className="p-text">ahtasham1802@gmail.com</a>
+        <a href="mailto:ahtasham1802@gmail.com" className="p-text text-white">ahtasham1802@gmail.com</a>
       </div>
       {/* <div className="app__footer-card">
         <img src={'mobile.png'} alt="phone" />
@@ -21,14 +21,14 @@ const Footer = () => {
     </div>
       <div className="app__footer-form app__flex">
         <div className="app__flex">
-          <input className="p-text" type="text" placeholder="Your Name" name="username"/>
+          <input className="p-text bg-primary-color dark:bg-light-dark-bg" type="text" placeholder="Your Name" name="username"/>
         </div>
         <div className="app__flex">
-          <input className="p-text" type="email" placeholder="Your Email" name="email"/>
+          <input className="p-text bg-primary-color dark:bg-light-dark-bg" type="email" placeholder="Your Email" name="email"/>
         </div>
-        <div>
+        <div className='app__flex bg-light-dark-bg'>
           <textarea
-            className="p-text"
+            className="p-text bg-primary-color dark:bg-light-dark-bg"
             placeholder="Your Message"
             name="message"
           />

@@ -3,13 +3,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 5rem;
+    padding: 1rem;
     background-color: rgba(255, 255, 255, .25);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
-    border: 1px solid rgba(255, 255, 255, .18);
+    border-bottom: 1px solid rgba(255, 255, 255, .18);
     position: fixed;
     z-index: 2;
+}
+@media screen and (min-width: 900px) {
+    .app__navbar {
+        padding: 1rem 5rem;
+    }
 }
 .app__navbar-logo {
     display: flex;
@@ -73,11 +78,13 @@
     justify-content: center;
     align-items: center;
     background-color: var(--secondary-color);
+    @apply dark:bg-light-dark-bg dark:shadow-lg
 }
 .app__navbar-menu svg {
     width: 70%;
     height: 70%;
     color: var(--white-color);
+    @apply text-white
 }
 .app__navbar-menu div {
     position: fixed;
@@ -97,12 +104,15 @@
     background-size: cover;
     background-repeat: repeat;
     box-shadow: 0 0 20px rgba(168, 168, 168, .15);
+    @apply dark:bg-light-dark-bg
 }
 .app__navbar-menu div svg {
     width: 35px;
     height: 35px;
     color: var(--secondary-color);
     margin: 0.5rem 1rem;
+
+    @apply dark:text-white
 }
 .app__navbar-menu div ul {
     list-style: none;

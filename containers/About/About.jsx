@@ -6,16 +6,17 @@ import "./About.css";
 import { AppWrap, MotionWrap } from "../../wrapper";
 
 const abouts = [
-  { title: 'Web Developer', description: 'I am a web developer with a passion for building beautiful and functional web        applications', imgUrl: '/about01.png' },
-  { title: 'Frontend Developer', description: 'I am a frontend developer with a passion for building beautiful and functional web applications', imgUrl: '/about02.png' },
-  { title: 'React Native', description: 'I am a mobile app developer with a passion for building beautiful and functional web applications', imgUrl: '/about03.png' },
+  { title: 'About me', description: 'I am a web developer with a passion for building responsive and functional web applications', imgUrl: '/about04.png' },
+  { title: 'Frontend Development', description: 'I can create websites using HTML, CSS, JavaScript, React, and Next JS. I can convert figma designs into fully functional and interactive web applications.', imgUrl: '/about02.png' },
+  { title: 'Responsive Designs', description: 'I can create responsive web designs with CSS frameworks like Tailwind CSS, for theming and more.', imgUrl: '/about06.png' },
+  { title: 'Next JS', description: 'I can create lightning fast website using Next JS, which one of the leading frontend framework includes multi-routing and SSR.', imgUrl: '/about05.png' },
 ]
 
 const About = () => {
 
   return (
     <>
-      <h2 className="head-text">I know that <span>Good Development</span><br />means <span>Good Bussiness</span>
+      <h2 className="head-text dark:text-white">I know that <span className="dark:text-yellow-bg">Good Development</span><br />means <span className="dark:text-yellow-bg">Good Bussiness</span>
       </h2>
       <div className="app__profiles">
         {abouts.map((about, index) => (
@@ -27,8 +28,8 @@ const About = () => {
             key={about.title + index}
           >
             <img src={about.imgUrl} alt={about.title} />
-            <h2 className="bold-text" style={{ marginTop: 20 }}>{about.title}</h2>
-            <p className="p-text" style={{ marginTop: 10 }}>{about.description}</p>
+            <h2 className="bold-text dark:text-white" style={{ marginTop: 20 }}>{about.title}</h2>
+            <p className="p-text dark:text-white/70" style={{ marginTop: 10 }}>{about.description}</p>
           </motion.div>
         ))}
       </div>
@@ -39,5 +40,5 @@ const About = () => {
 export default AppWrap(
   MotionWrap(About, 'app__about'),
   'about',
-  'app__whitebg'
+  'app__whitebg',
 );

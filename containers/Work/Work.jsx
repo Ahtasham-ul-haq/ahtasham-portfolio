@@ -34,7 +34,7 @@ const Work = () => {
   }
   return (
     <>
-      <h2 className="head-text">My Creative <span>Portfolio </span>Section</h2>
+      <h2 className="head-text dark:text-white">My Creative <span className='dark:text-yellow-bg'>Portfolio </span>Section</h2>
       {/* <div className='app__work-filter'>
         {['UI/UX', 'Web App', 'Mobile App', 'React JS', 'All'].map((item, index) => (
           <div
@@ -48,7 +48,9 @@ const Work = () => {
       </div> */}
 
       <motion.div
-        transition={{ duration: 0.5, delayChildren: 0.5 }} className='app__work-portfolio' >
+        transition={{ duration: 0.5, delayChildren: 0.5 }} 
+        className='app__work-portfolio' 
+      >
         {works.map((work, index) => (
           <div className='app__work-item app__flex' key={index}>
             <div className='app__work-img app__flex'>
@@ -80,10 +82,10 @@ const Work = () => {
             </div>
 
             <div className='app__work-content app__flex' >
-              <h4 className="bold-text">{work.title}</h4>
-              <p className="p-text" style={{ marginTop: 10 }}>{work.description}</p>
+              <h4 className="bold-text dark:text-white">{work.title}</h4>
+              <p className="p-text dark:text-white/70" style={{ marginTop: 10 }}>{work.description}</p>
               <div className="app__work-tag app__flex">
-                <p className="p-text">{work.tag}</p>
+                <p className="p-text dark:text-white">{work.tag}</p>
               </div>
             </div>
           </div>
