@@ -10,6 +10,7 @@
     border-bottom: 1px solid rgba(255, 255, 255, .18);
     position: fixed;
     z-index: 2;
+    @apply dark:bg-transparent dark:backdrop:blur-lg dark:border dark:border-secondary-bg/75
 }
 @media screen and (min-width: 900px) {
     .app__navbar {

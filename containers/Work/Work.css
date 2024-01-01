@@ -39,7 +39,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
 }
 .app__work-portfolio .app__work-item {
     width: 270px;

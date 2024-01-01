@@ -12,7 +12,7 @@ import ThemeSwitch from "@/components/ThemeSwitcher";
 const Navbar = () => {
   const [toggle, setToggle] = useState(false)
   return (
-    <nav className="app__navbar dark:bg-secondary-bg dark:border-b-secondary-bg">
+    <nav className="app__navbar">
       <div className="app__navbar-logo">
         <a href="/">
         {/* <img src={'/portfolio.png'} alt="logo" /> */}
@@ -20,7 +20,7 @@ const Navbar = () => {
         </a>
       </div>
       <ul className="app__navbar-links">
-        {["home", "about", "work", "contact"].map((item) => (
+        {["home", "about", "work"].map((item) => (
           <li className="app__flex p-text" key={`link-${item}`}>
             <div />
             <a href={`#${item}`} className="dark:hover:text-white">{item}</a>
@@ -43,7 +43,7 @@ const Navbar = () => {
           >
             <HiX onClick={() => setToggle(false)} />
             <ul >
-              {["home", "about", "work", "contact"].map((item) => (
+              {["home", "about", "work"].map((item) => (
                 <li key={item}>
                   <a href={`#${item}`} onClick={() => setToggle(false)} >{item}</a>
                 </li>

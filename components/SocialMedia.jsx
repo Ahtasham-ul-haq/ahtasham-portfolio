@@ -21,7 +21,7 @@ const SocialMedia = () => {
                 </a>
             </div>
             <div>
-                <a href="https://www.linkedin.com/in/ahtasham-ul-haq-9b0a41246/">
+                <a href="mailto:ahtasham1802@gmail.com">
                     <MdEmail className='dark:hover:text-white' />
                 </a>
             </div>
