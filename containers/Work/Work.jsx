@@ -5,6 +5,7 @@ import { AiFillEye, AiFillGithub } from "react-icons/ai";
 import { motion } from "framer-motion";
 import { AppWrap, MotionWrap } from "../../wrapper";
 import "./Work.css";
+import Image from "next/image";
 
 const works = [
   {
@@ -91,7 +92,7 @@ const Work = () => {
         {works.map((work, index) => (
           <div className="app__work-item flex items-center" key={index}>
             <div className="app__work-img app__flex">
-              <img src={work.imgUrl} alt={work.title} />
+              <Image width={230} height={230} priority={true} src={work.imgUrl} alt={work.title} />
               <motion.div
                 whileHover={{ opacity: [0, 1] }}
                 transition={{

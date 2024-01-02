@@ -1,52 +1,47 @@
-"use client"
-
-import React, { useState } from 'react';
-import { AppWrap, MotionWrap } from '../../wrapper';
-import './Footer.css';
+import Link from "next/link";
+import React from "react";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import { RiTwitterXFill } from "react-icons/ri";
+import { TbBrandFiverr } from "react-icons/tb";
 
 const Footer = () => {
-    return (
-    <>
-    <h2 className="head-text dark:text-white">Take a <span className='dark:text-yellow-bg'>coffee & chat</span> with me</h2>
-
-    <div className="app__footer-cards">
-      <div className="app__footer-card bg-pink-500 dark:bg-light-dark-bg">
-        <img src={'/email.png'} alt="email" />
-        <a href="mailto:ahtasham1802@gmail.com" className="p-text text-black">ahtasham1802@gmail.com</a>
+  return (
+    <footer className="flex justify-between items-center text-white-800 body-text w-full gap-y-10 border-t border-lightGray-color dark:border-light-dark-bg bg-black-100 px-20 py-12 max-md:flex-col">
+      <p>
+      © 2024, All rights reserved.
+      </p>
+      <div className="flex gap-x-6">
+        <Link
+          target="_blank"
+          href={"https://github.com/Ahtasham-ul-haq"}
+          className="text-3xl text-gray-color dark:text-white hover:text-secondary-color"
+        >
+          <AiFillGithub />
+        </Link>
+        <Link
+          target="_blank"
+          href={"https://www.linkedin.com/in/ahtasham-ul-haq-9b0a41246/"}
+          className="text-3xl text-gray-color dark:text-white hover:text-secondary-color"
+        >
+          <AiFillLinkedin />
+        </Link>
+        <Link
+          target="_blank"
+          href={"https://twitter.com/ahtasham1802"}
+          className="text-3xl text-gray-color dark:text-white hover:text-secondary-color"
+        >
+          <RiTwitterXFill />
+        </Link>
+        <Link
+          target="_blank"
+          href={"https://www.fiverr.com/ahtasham1802?up_rollout=true"}
+          className="text-3xl text-gray-color dark:text-white hover:text-secondary-color"
+        >
+          <TbBrandFiverr />
+        </Link>
       </div>
-      {/* <div className="app__footer-card">
-        <img src={'mobile.png'} alt="phone" />
-        <a href="tel:+1 (123) 456-7890" className="p-text">+1 (123) 456-7890</a>
-      </div> */}
-    </div>
-      <div className="app__footer-form app__flex">
-        <div className="app__flex">
-          <input className="p-text bg-primary-color dark:bg-light-dark-bg" type="text" placeholder="Your Name" name="username"/>
-        </div>
-        <div className="app__flex">
-          <input className="p-text bg-primary-color dark:bg-light-dark-bg" type="email" placeholder="Your Email" name="email"/>
-        </div>
-        <div className='app__flex bg-light-dark-bg'>
-          <textarea
-            className="p-text bg-primary-color dark:bg-light-dark-bg"
-            placeholder="Your Message"
-            name="message"
-          />
-        </div>
-        <button type="button" className="p-text">Send Message</button>
-      </div>
-      {/* <div>
-        <h3 className="head-text">
-          Thank you for getting in touch!
-        </h3> */}
-      {/* </div> */}
-    
-  </>
-    )
-}
+    </footer>
+  );
+};
 
-export default AppWrap(
-    MotionWrap(Footer, 'app__footer'),
-    'contact',
-    'app__whitebg',
-);
+export default Footer;

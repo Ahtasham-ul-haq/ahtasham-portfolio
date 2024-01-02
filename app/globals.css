@@ -25,8 +25,13 @@
   scroll-behavior: smooth;
 }
 
+::selection {
+  background-color: #0070f3;
+  color: #fff;
+}
+
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 8px;
 }
 ::-webkit-scrollbar-track {
   background-color: transparent;

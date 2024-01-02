@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import "./Header.css";
 import { AppWrap } from '../../wrapper'
 import Link from "next/link";
+import Image from "next/image";
 
 const scaleVariants = {
   whileInView: {
@@ -40,7 +41,7 @@ const Header = () => {
             <p className="p-text dark:text-white">Web Developer</p>
             <p className="p-text dark:text-white">Web Designer</p>
           </div>
-          <Link href={'mailto:ahtasham1802@gmail.com'} className="min-w-[290px] transition duration-300 hover:shadow-[#fef4f5] shadow-lg lg:mt-24 mt-12 flex flex-row justify-start items-center my-4 p-4 rounded-[10px] cursor-pointer bg-secondary-color dark:bg-light-dark-bg">
+          <Link href={'mailto:ahtasham1802@gmail.com'} className="min-w-[290px] transition duration-300 box-shadow-white shadow-lg lg:mt-24 mt-12 flex flex-row justify-start items-center my-4 p-4 rounded-[10px] cursor-pointer bg-secondary-color dark:bg-light-dark-bg">
             <img src="/email.png" alt="email" width={40} height={40} className="mx-[0.7rem]" />
             <p className="text-[0.8rem] text-white">ahtasham1802@gmail.com</p>
           </Link>
@@ -51,7 +52,7 @@ const Header = () => {
         transition={{ duration: 0.5, delay: 0.5 }}
         className="app__header-img"
       >
-        <img src={'/profile.png'} alt="profile-bg" />
+        <Image src={'/profile.png'} fill={true} priority={true} alt="profile-bg" />
         <motion.img
           whileInView={{ scale: [0, 1] }}
           transition={{ duration: 1, ease: 'easeInOut' }}
@@ -66,13 +67,13 @@ const Header = () => {
         className="app__header-circles"
       >
           <div className="circle-cmp app__flex dark:bg-light-dark-bg">
-            <img src={"/figma.png"} alt="circle" />
+            <Image src={"/figma.png"} width={60} height={60} alt="circle" />
           </div>
           <div className="circle-cmp app__flex dark:bg-light-dark-bg">
-            <img src={"/next.png"} alt="circle" />
+            <Image src={"/next.png"} width={90} height={90} alt="circle" />
           </div>
           <div className="circle-cmp app__flex dark:bg-light-dark-bg">
-            <img src={"/python.png"} alt="circle" />
+            <Image src={"/python.png"} width={42} height={42} alt="circle" />
           </div>
       </motion.div>
 

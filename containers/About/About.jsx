@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import "./About.css";
 import { AppWrap, MotionWrap } from "../../wrapper";
+import Image from "next/image";
 
 const abouts = [
   { title: 'About me', description: 'I am a web developer with a passion for building responsive and functional web applications', imgUrl: '/about04.png' },
@@ -27,7 +28,7 @@ const About = () => {
             className="app__profile-item"
             key={about.title + index}
           >
-            <img src={about.imgUrl} alt={about.title} />
+            <Image className="" width={170} height={170} priority={true} src={about.imgUrl} alt={about.title} />
             <h2 className="bold-text dark:text-white" style={{ marginTop: 20 }}>{about.title}</h2>
             <p className="p-text dark:text-white/70" style={{ marginTop: 10 }}>{about.description}</p>
           </motion.div>
