@@ -5,6 +5,17 @@ import { Providers } from "./providers";
 export const metadata = {
   title: "Portfolio | Ahtasham",
   description: "My Portfolio website.",
+  other: {
+    "theme-color": "#0d1117",
+    "color-scheme": "dark white",
+    "twitter:image":
+      "https://raw.githubusercontent.com/Ahtasham-ul-haq/ahtasham-portfolio/main/app/favicon.ico",
+    "twitter:card": "summary_large_image",
+    "og:url": "ahtasham-dev.vercel.app",
+    "og:image":
+      "https://raw.githubusercontent.com/Ahtasham-ul-haq/ahtasham-portfolio/main/app/favicon.ico",
+    "og:type": "website",
+  },
 };
 
 export default function RootLayout({ children }) {
