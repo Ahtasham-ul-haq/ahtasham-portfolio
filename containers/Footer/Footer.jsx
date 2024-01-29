@@ -6,10 +6,8 @@ import { TbBrandFiverr } from "react-icons/tb";
 
 const Footer = () => {
   return (
-    <footer className="flex justify-between items-center text-white-800 body-text w-full gap-y-10 border-t border-lightGray-color dark:border-light-dark-bg bg-black-100 px-20 py-12 max-md:flex-col">
-      <p>
-      © 2024, All rights reserved.
-      </p>
+    <footer className="flex justify-between items-center text-white-800 body-text w-full gap-y-10 border-t border-lightGray-color dark:border-light-dark-bg bg-black-100 px-20 py-8 max-md:flex-col">
+      <p>© 2024, All rights reserved.</p>
       <div className="flex gap-x-6">
         <Link
           target="_blank"

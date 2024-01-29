@@ -1,6 +1,7 @@
 import "./globals.css";
 import Navbar from "@/containers/Navbar/Navbar";
 import { Providers } from "./providers";
+import Image from "next/image";
 
 export const metadata = {
   title: "Portfolio | Ahtasham",
@@ -23,6 +24,9 @@ export default function RootLayout({ children }) {
     <html lang="en" suppressHydrationWarning>
       <body className="app dark:bg-dark-bg overflow-x-hidden">
         <Providers>
+          {/* <div className="absolute w-full h-full mix-blend-multiply">
+            <Image src={"/noisetexture.jpg"} fill />
+          </div> */}
           <Navbar />
           {children}
         </Providers>

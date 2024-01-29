@@ -64,6 +64,7 @@
 }
 .app__navbar-links li:hover div {
     background-color: var(--secondary-color);
+    @apply dark:bg-yellow-bg
 }
 @media screen and (max-width: 900px) {
     .app__navbar-links {

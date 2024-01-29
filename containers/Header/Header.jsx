@@ -44,7 +44,7 @@ const Header = () => {
           </div>
           <Link
             href={"mailto:ahtasham1802@gmail.com"}
-            className="min-w-[290px] transition duration-300 box-shadow-white shadow-lg lg:mt-24 mt-12 flex flex-row justify-start items-center my-4 p-4 rounded-[10px] cursor-pointer  bg-light-dark-bg/30 dark:bg-light-dark-bg"
+            className="min-w-[290px] transition duration-300 box-shadow-white shadow-lg lg:mt-24 mt-12 flex flex-row justify-start items-center my-4 p-4 rounded-[10px] cursor-pointer dark:bg-light-dark-bg"
           >
             <img
               src="/email.png"

@@ -51,11 +51,11 @@
 }
 .app__whitebg {
   /* background-color: var(--white-color); */
-  @apply bg-white-color dark:bg-secondary-bg
+  @apply bg-white-color dark:bg-transparent
 }
 .app__primarybg {
   /* background-color: var(--primary-color); */
-  @apply bg-primary-color dark:bg-dark-bg
+  @apply bg-primary-color dark:bg-transparent
 }
 .app__container {
   width: 100%;
