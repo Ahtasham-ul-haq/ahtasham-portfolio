@@ -173,31 +173,60 @@ export const navItems = [
   export const workExperience = [
     {
       id: 1,
-      title: "Frontend Engineer Intern",
-      desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+      title: "Frontend Web Developer",
+      desc: "As a skilled web developer, I expertise in HTML, CSS, JavaScript, React, Next.js, and Tailwind CSS allows me to build dynamic, responsive, and user-friendly interfaces.",
+      keyFeatures: [
+        "Custom website design and development",
+        "Single Page Applications (SPAs) with React and Next.js",
+        "Responsive and mobile-first design",
+        "UI/UX optimization",
+        "Integration of APIs and third-party services",
+        "Cross-browser compatibility",
+      ],
       className: "md:col-span-2",
       thumbnail: "/exp1.svg",
     },
     {
       id: 2,
-      title: "Mobile App Dev - JSM Tech",
-      desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+      title: "Backend Web Development",
+      desc: "Complementing my frontend expertise, I know basics of Node.js and Express and Integration with Databases like Mongo DB. I can handle the process of fetching APIs from backend",
+      keyFeatures: [
+        "Authentication and authorization systems",
+        "Integration with third-party services",
+        "Database design and management (MongoDB)",
+      ],
       className: "md:col-span-2", // change to md:col-span-2
-      thumbnail: "/exp2.svg",
+      thumbnail: "/exp4.svg",
     },
     {
       id: 3,
-      title: "Freelance App Dev Project",
-      desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+      title: "Responsive Website",
+      desc: "In today's mobile-first world, having a responsive website is crucial. I specialize in creating websites that look and function perfectly on all devices, from desktops to smartphones. By leveraging modern frameworks and tools like Tailwind CSS, I ensure that your site is not only visually appealing but also highly adaptable to different screen sizes and resolutions.",
+      keyFeatures: [
+        "Mobile-first website design",
+        "Cross-device compatibility testing",
+        "Flexible grid systems and layouts",
+        "Optimized media queries for various devices",
+        "Fast loading times and performance tuning",
+        "Enhanced user experience across all platforms",
+      ],
       className: "md:col-span-2", // change to md:col-span-2
       thumbnail: "/exp3.svg",
     },
     {
       id: 4,
-      title: "Lead Frontend Developer"  ,
-      desc: "Developed and maintained user-facing features using modern frontend technologies.",
+      title: "Website Enhancement and Maintenance"  ,
+      desc: "A website is never truly finished. Continuous improvement and maintenance are essential to keep your site running smoothly and staying ahead of the competition. I offer comprehensive enhancement services to ensure your website remains up-to-date with the latest technologies and trends. From performance optimization to new feature integration, I help your site grow and evolve.",
+      keyFeatures: [
+        "Website performance audits and improvements",
+        "SEO optimization",
+        "Security updates and vulnerability fixes",
+        "Feature enhancements and custom development",
+        "Bug fixing and troubleshooting",
+        "Regular maintenance and support packages",
+      ],
       className: "md:col-span-2",
-      thumbnail: "/exp4.svg",
+      thumbnail: "/exp2.svg",
     },
   ];
   
