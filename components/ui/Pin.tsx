@@ -7,13 +7,13 @@ import { cn } from "@/utils/cn";
 export const PinContainer = ({
   children,
   title,
-  href,
+  // href,
   className,
   containerClassName,
 }: {
   children: React.ReactNode;
   title?: string;
-  href?: string;
+  // href?: string;
   className?: string;
   containerClassName?: string;
 }) => {
@@ -54,7 +54,7 @@ export const PinContainer = ({
           <div className={cn(" relative z-50 ", className)}>{children}</div>
         </div>
       </div>
-      <PinPerspective title={title} href={href} />
+      <PinPerspective title={title} />
     </div>
   );
 };

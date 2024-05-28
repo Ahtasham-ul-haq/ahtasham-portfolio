@@ -6,7 +6,7 @@ import { FaRegCircle } from 'react-icons/fa6'
 
 const Experience = () => {
   return (
-    <div className='py-20' id='experience'>
+    <div className='py-20' id='services'>
         <h1 className='heading'>
             My {' '}
             <span className='text-purple'>Services</span>
