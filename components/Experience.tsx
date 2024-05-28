@@ -34,9 +34,9 @@ const Experience = () => {
                             </p>
                             <ul className='text-start text-white-100 mt-3 font-normal'>
                                 {card.keyFeatures?.map((feature, index) => (
-                                    <div className='flex gap-4 items-center'>
+                                    <div className='flex gap-4 items-center' key={index}>
                                         <FaRegCircle size={8} />
-                                    <li key={index}>
+                                    <li>
                                         {feature}
                                     </li>
                                     </div>
