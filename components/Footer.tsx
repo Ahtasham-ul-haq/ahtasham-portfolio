@@ -19,11 +19,11 @@ const Footer = () => {
                 Ready to take <span className='text-purple'>your</span> digital presence to the next level?
             </h1>
             <p className='text-center text-white-200 md:mt-10 my-5'>
-                Reach out me today and let's discuss how I can help you achieve your goals.
+                Reach out me today and let&apos;s discuss how I can help you achieve your goals.
             </p>
             <a href="mailto:ahtasham1802@gmail.com">
                 <MagicButton
-                    title={`Let's get in touch`}
+                    title="Let&apos;s get in touch"
                     icon={<FaLocationArrow />}
                     position='right'
                 />
