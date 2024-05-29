@@ -100,11 +100,11 @@ export const navItems = [
     {
       id: 4,
       title: "DevDigest - JS Master Resources",
-      des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+      des: "A JS Mastery resources page connected with CMS and a Search Engine Optimized search-bar.",
       img: "/p4.png",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+      iconLists: ["/next.svg", "/tail.svg", "/ts.svg"],
       liveLink: "https://jsm-clone-chi.vercel.app/",
-      githubLink: "https://github.com/Ahtasham-ul-haq/devdigest",
+      githubLink: "https://github.com/Ahtasham-ul-haq/DevDigest",
     },
   ];
   
@@ -205,14 +205,12 @@ export const navItems = [
     {
       id: 3,
       title: "Responsive Website",
-      desc: "In today's mobile-first world, having a responsive website is crucial. I specialize in creating websites that look and function perfectly on all devices, from desktops to smartphones. By leveraging modern frameworks and tools like Tailwind CSS, I ensure that your site is not only visually appealing but also highly adaptable to different screen sizes and resolutions.",
+      desc: "In today's mobile-first world, having a responsive website is crucial. I specialize in creating websites that look and function perfectly on all devices, from desktops to smartphones by leveraging modern frameworks and tools like Tailwind CSS.",
       keyFeatures: [
         "Mobile-first website design",
-        "Cross-device compatibility testing",
         "Flexible grid systems and layouts",
         "Optimized media queries for various devices",
         "Fast loading times and performance tuning",
-        "Enhanced user experience across all platforms",
       ],
       className: "md:col-span-2", // change to md:col-span-2
       thumbnail: "/exp3.svg",
@@ -220,11 +218,9 @@ export const navItems = [
     {
       id: 4,
       title: "Website Enhancement and Maintenance"  ,
-      desc: "A website is never truly finished. Continuous improvement and maintenance are essential to keep your site running smoothly and staying ahead of the competition. I offer comprehensive enhancement services to ensure your website remains up-to-date with the latest technologies and trends. From performance optimization to new feature integration, I help your site grow and evolve.",
+      desc: "A website is never truly finished. Continuous improvement and maintenance are essential to keep your site running smoothly and staying ahead of the competition. I offer comprehensive enhancement services to ensure your website remains up-to-date with the latest technologies and trends.",
       keyFeatures: [
-        "Website performance audits and improvements",
         "SEO optimization",
-        "Security updates and vulnerability fixes",
         "Feature enhancements and custom development",
         "Bug fixing and troubleshooting",
         "Regular maintenance and support packages",
