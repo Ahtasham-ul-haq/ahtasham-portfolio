@@ -202,6 +202,7 @@ export const BentoGridItem = ({
                 position="left"
                 handleClick={handleDownload}
               />
+                <a href={cv} download="name cv.pdf"> Download CV </a>
               </div>
             </div>
           )}
