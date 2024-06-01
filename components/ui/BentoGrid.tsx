@@ -14,6 +14,8 @@ import MagicButton from "./MagicButton";
 import { cn } from "@/utils/cn";
 import { GridGlobe } from "./GridGlobe";
 import { FaDownload } from "react-icons/fa6";
+import Link from "next/link";
+
 
 export const BentoGrid = ({
   className,
@@ -74,9 +76,6 @@ export const BentoGridItem = ({
     navigator.clipboard.writeText(text);
     setCopied(true);
   };
-  const handleDownload = () => {
-
-  }
 
   return (
     <div
@@ -188,21 +187,22 @@ export const BentoGridItem = ({
                 {/* <img src="/confetti.gif" alt="confetti" /> */}
                 <Lottie options={defaultOptions} height={200} width={400} />
               </div>
-                  <div className="flex flex-col gap-4 lg:flex-row items-center">
-              <MagicButton
-                title={copied ? "Email is Copied!" : "Copy my email"}
-                icon={<IoCopyOutline />}
-                position="left"
-                handleClick={handleCopy}
-                otherClasses="!bg-[#161A31]"
-              />
-              <MagicButton
-                title={"Download CV"}
-                icon={<FaDownload />}
-                position="left"
-                handleClick={handleDownload}
-              />
-                <a href={cv} download="name cv.pdf"> Download CV </a>
+              <div className="flex flex-col lg:flex-row items-center justify-center gap-4">
+                <MagicButton
+                  title={copied ? "Email is Copied!" : "Copy my email"}
+                  icon={<IoCopyOutline />}
+                  position="left"
+                  handleClick={handleCopy}
+                  otherClasses="!bg-[#161A31]"
+                />
+                <Link
+                  href="./AhtashamCV.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="z-50 mt-8"
+                >
+                  Download CV
+                </Link>
               </div>
             </div>
           )}
