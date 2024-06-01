@@ -199,7 +199,7 @@ export const BentoGridItem = ({
                   href="./AhtashamCV.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="z-50 mt-8"
+                  className="z-50 mt-8 bg-white text-black px-4 py-2"
                 >
                   Download CV
                 </Link>
