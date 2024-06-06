@@ -30,7 +30,7 @@ const Hero = () => {
                     />
 
                     <p className='text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl'>
-                        Hi, I&apos;m am Ahtasham, a Next.js developer based in Pakistan 
+                        Hi, I&apos;m Ahtasham, a Next.js developer based in Pakistan 
                     </p>
 
                     <a href="#projects">
