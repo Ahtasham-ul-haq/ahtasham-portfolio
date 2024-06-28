@@ -188,24 +188,22 @@ export const BentoGridItem = ({
                 {/* <img src="/confetti.gif" alt="confetti" /> */}
                 <Lottie options={defaultOptions} height={200} width={400} />
               </div>
-              <div className="flex flex-col lg:flex-row items-center justify-center gap-4 z-50">
-                <div>
-                  <MagicButton
-                    title={copied ? "Email is Copied!" : "Copy my email"}
-                    icon={<IoCopyOutline />}
-                    position="left"
-                    handleClick={handleCopy}
-                    otherClasses="!bg-[#161A31]"
-                  />
-                </div>
-                <div className="">
-                  <Link
-                    href="./AhtashamCV.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className=" bg-white text-black px-4 py-2"
-                  ></Link>
-                </div>
+              <div className="flex flex-col lg:flex-row items-center justify-center gap-4">
+                <MagicButton
+                  title={copied ? "Email is Copied!" : "Copy my email"}
+                  icon={<IoCopyOutline />}
+                  position="left"
+                  handleClick={handleCopy}
+                  otherClasses="!bg-[#161A31]"
+                />
+                <Link
+                  href="./AhtashamCV.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="z-50 mt-8 bg-white text-black px-4 py-2"
+                >
+                  Download CV
+                </Link>
               </div>
             </div>
           )}
