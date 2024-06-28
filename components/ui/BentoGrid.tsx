@@ -1,12 +1,10 @@
-"use client"
+"use client";
 
 import { useState } from "react";
 import { IoCopyOutline } from "react-icons/io5";
 
 // Also install this npm i --save-dev @types/react-lottie
 import Lottie from "react-lottie";
-
-
 
 import { BackgroundGradientAnimation } from "./GradientBg";
 import animationData from "@/data/confetti.json";
@@ -15,7 +13,6 @@ import { cn } from "@/utils/cn";
 import { GridGlobe } from "./GridGlobe";
 import { FaDownload } from "react-icons/fa6";
 import Link from "next/link";
-
 
 export const BentoGrid = ({
   className,
@@ -104,8 +101,9 @@ export const BentoGridItem = ({
           )}
         </div>
         <div
-          className={`absolute right-0 -bottom-5 ${id === 5 && "w-full opacity-80"
-            } `}
+          className={`absolute right-0 -bottom-5 ${
+            id === 5 && "w-full opacity-80"
+          } `}
         >
           {spareImg && (
             <img
@@ -136,7 +134,9 @@ export const BentoGridItem = ({
           {/* add text-3xl max-w-96 , remove text-neutral-600 dark:text-neutral-300*/}
           {/* remove mb-2 mt-2 */}
           <div
-            className={`font-sans text-lg lg:text-3xl max-w-96 font-bold ${id === 2 && "lg:text-2xl -mt-4"}`}
+            className={`font-sans text-lg lg:text-3xl max-w-96 font-bold ${
+              id === 2 && "lg:text-2xl -mt-4"
+            }`}
           >
             {title}
           </div>
@@ -181,28 +181,31 @@ export const BentoGridItem = ({
               {/* remove focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 */}
               {/* add handleCopy() for the copy the text */}
               <div
-                className={`absolute -bottom-5 right-0 ${copied ? "block" : "block"
-                  }`}
+                className={`absolute -bottom-5 right-0 ${
+                  copied ? "block" : "block"
+                }`}
               >
                 {/* <img src="/confetti.gif" alt="confetti" /> */}
                 <Lottie options={defaultOptions} height={200} width={400} />
               </div>
-              <div className="flex flex-col lg:flex-row items-center justify-center gap-4">
-                <MagicButton
-                  title={copied ? "Email is Copied!" : "Copy my email"}
-                  icon={<IoCopyOutline />}
-                  position="left"
-                  handleClick={handleCopy}
-                  otherClasses="!bg-[#161A31]"
-                />
-                <Link
-                  href="./AhtashamCV.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="z-50 mt-8 bg-white text-black px-4 py-2"
-                >
-                  Download CV
-                </Link>
+              <div className="flex flex-col lg:flex-row items-center justify-center gap-4 z-50">
+                <div>
+                  <MagicButton
+                    title={copied ? "Email is Copied!" : "Copy my email"}
+                    icon={<IoCopyOutline />}
+                    position="left"
+                    handleClick={handleCopy}
+                    otherClasses="!bg-[#161A31]"
+                  />
+                </div>
+                <div className="">
+                  <Link
+                    href="./AhtashamCV.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className=" bg-white text-black px-4 py-2"
+                  ></Link>
+                </div>
               </div>
             </div>
           )}
