@@ -31,7 +31,7 @@ const Hero = () => {
           </h2>
 
           <TextGenerateEffect
-            words="Transforming Ideas into Digital Reality"
+            words="Transforming Concepts into Seamless User Experience"
             className="text-center text-[40px] md:text-5xl lg:text-6xl max-w-96 md:max-w-[30rem] lg:max-w-[38rem]"
           />
 
