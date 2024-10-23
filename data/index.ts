@@ -239,7 +239,7 @@ export const navItems = [
     {
       id: 3,
       img: "/link.svg",
-      href: "www.linkedin.com/in/ahtashamulhaq-dev",
+      href: "https://linkedin.com/in/ahtashamulhaq-dev",
 
     },
     {
