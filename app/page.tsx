@@ -6,6 +6,7 @@ import Approach from "@/components/Approach";
 import { FloatingNav } from "@/components/ui/FloatingNav";
 import { navItems } from "@/data";
 import Footer from "@/components/Footer";
+import About from "@/components/About";
 
 export default function Home() {
   return (
@@ -13,7 +14,8 @@ export default function Home() {
       <div className="max-w-7xl w-full">
         <FloatingNav navItems={navItems} />
         <Hero />
-        {/* <Grid /> */}
+        {/* <About /> */}
+        <Grid />
         <RecentProjects />
         <Experience />
         <Approach />
