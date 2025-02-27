@@ -86,4 +86,10 @@
   .black-gradient {
     background: linear-gradient(90deg, #161a31 0%, #06091f 100%);
   }
+
+  .about-card {
+    background: rgb(4,7,29);
+    background-color: linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%);
+    @apply relative rounded-3xl border border-white/[0.1] hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-start flex flex-col space-y-4
+  }
 }

@@ -22,14 +22,14 @@ const RecentProjects = () => {
                 title={`visit`}
                 // href={link}
               >
-                <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden sm:h-[40vh] h-[30vh] mb-10">
+                <div className="relative group flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden sm:h-[40vh] h-[30vh] mb-10">
                   <div className="relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#13162d]">
                     <img src="/bg.png" alt="bg-img" />
                   </div>
                   <img
                     src={img}
                     alt={title}
-                    className="z-10 rounded-lg absolute top-2 bottom-0 p-3 left-4 rotate-3 object-contain"
+                    className="z-10 rounded-lg absolute top-2 bottom-0 p-3 left-4 rotate-3 group-hover:rotate-0 group-hover:top-0 group-hover:p-0 group-hover:left-0 transition-all duration-500 object-contain"
                   />
                 </div>
                 <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
