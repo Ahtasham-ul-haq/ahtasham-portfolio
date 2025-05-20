@@ -1,5 +1,32 @@
 import React from 'react'
 
+const skills = [
+  {
+    name: 'NEXT JS',
+    icon: '/next.svg',
+  },
+  {
+    name: 'REACT',
+    icon: '/re.svg',
+  },
+  {
+    name: 'NEXT JS',
+    icon: '/next.svg',
+  },
+  {
+    name: 'REACT',
+    icon: '/re.svg',
+  },
+  {
+    name: 'NEXT JS',
+    icon: '/next.svg',
+  },
+  {
+    name: 'REACT',
+    icon: '/re.svg',
+  },
+]
+
 const About = () => {
   return (
     // <div className='relative grid grid-cols-1 md:grid-cols-6 lg:grid-cols-5 md:grid-rows-7 gap-4 lg:gap-8 p-4'>
@@ -30,7 +57,7 @@ const About = () => {
     // </div>
     
 <div className="grid grid-cols-5 grid-rows-7 gap-4">
-    <div className="relative col-span-3 row-span-4 min-h-[60vh] rounded-3xl border border-white/[0.1] group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-start flex flex-col space-y-4"
+    <div className="relative col-span-3 row-span-4 min-h-[60vh] h-[550px] rounded-3xl border border-white/[0.1] group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-start flex flex-col space-y-8"
     style={{
         background: "rgb(4,7,29)",
         backgroundColor:
@@ -40,14 +67,47 @@ const About = () => {
         <div className='w-full h-full absolute' >
             <img src="/about_bg.svg" alt="" className='object-cover object-center w-full h-full' />
         </div>
-        <h1 className='ml-6 font-sans text-lg lg:text-3xl max-w-96 font-bold z-10'>About Me</h1>
-        <p className='mx-6  font-sans font-extralight md:text-xs lg:text-base text-sm text-[#C1C2D3] z-10'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam ratione ducimus ipsam recusandae ipsa eos eaque impedit. Dignissimos quasi a officia, esse cum mollitia minus ipsa unde. Aperiam, et sunt.</p>
+        <h1 className='ml-10 font-sans text-lg lg:text-3xl max-w-96 font-bold z-10'>About Me</h1>
+        <p className='mx-10 font-sans font-extralight md:text-xs lg:text-base text-sm text-[#C1C2D3] z-10'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam ratione ducimus ipsam recusandae ipsa eos eaque impedit. Dignissimos quasi a officia, esse cum mollitia minus ipsa unde. Aperiam, et sunt.</p>
     </div>
-    <div className="col-span-2 row-span-2 col-start-4 about-card">2</div>
+    <div className="col-span-2 row-span-2 col-start-4 about-card relative overflow-hidden">
+        <div className='w-full h-[100% + 20px] absolute top-[-10%] ' >
+          <img src="/grid.svg" alt="" className='object-cover object-center w-full h-full z-10' />
+        </div>
+      <div className='w-[520px] h-[125px] absolute bottom-0 left-[-20px] ' >
+          <img src="/map.svg" alt="" className='object-cover object-center w-full h-full z-40' />
+      </div>
+        <h1 className='ml-10 font-sans text-lg lg:text-3xl max-w-96 font-bold z-50'>
+          I’m very flexible with time zone communications
+        </h1>
+      </div>
     <div className="col-span-2 row-span-2 col-start-4 row-start-3 about-card">3</div>
     <div className="col-span-2 row-start-5 about-card">4</div>
     <div className="col-span-2 row-span-2 col-start-1 row-start-6 about-card">5</div>
-    <div className="col-span-3 row-span-3 col-start-3 row-start-5 about-card">6</div>
+
+      {/* TECH STACK */}
+
+    <div className="col-span-3 row-span-3 col-start-3 row-start-5 about-card min-h-[400px] relative overflow-hidden">
+      <div className='w-full h-[500px] absolute top-[-10%] ' >
+          <img src="/grid.svg" alt="" className='object-cover w-full h-full z-10 opacity-60' />
+      </div>
+      <div className='flex h-full'>
+        <div className='flex flex-col min-h-full justify-center items-start'>
+          <p className='mx-10 font-sans font-extralight md:text-xs lg:text-base text-sm text-[#C1C2D3]'>I constantly try to improve</p>
+          <h1 className='ml-10 font-sans text-lg lg:text-3xl max-w-96 font-bold'>My Tech Stack</h1>
+        </div>
+        <div className='flex flex-wrap flex-1'>
+          {skills.map((skill) => (
+            <div key={skill.name} className='flex flex-col items-center space-x-2'>
+              <div className='m-1 border border-white/[0.1] rounded-full p-2 bg-[#0D0E2C]'>
+              <img src={skill.icon} alt={skill.name} className='w-20 h-20' />
+              </div>
+              <span className='text-lg font-bold'>{skill.name}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
 </div>
     
   )

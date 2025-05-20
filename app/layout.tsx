@@ -22,9 +22,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <ThemeProvider
-          attribute="class"
+        attribute="class"
           defaultTheme="dark"
-          enableSystem
+          enableSystem={false} // disable system theme detection
+          forcedTheme="dark"   // force dark mode only
           disableTransitionOnChange
         >
           {children}
